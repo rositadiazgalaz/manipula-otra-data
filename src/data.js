@@ -1,10 +1,11 @@
 /* Manejo de data */
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+//filtrar por tipo
 
-const example = () => {
-  return 'example';
-};
-
-window.example = example;
+const filterByType = (pokedata, condition) =>{
+  filteringByType=pokedata.filter(element =>{
+    return element.type.includes(condition);
+  });
+  return filteringByType;
+}
+window.filterByType=filterByType;

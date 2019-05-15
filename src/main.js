@@ -8,5 +8,6 @@ window.onload=()=>{
         <img src="${pokedata[i].img}" alt="hola">
         <p>${pokedata[i].name}</p>
         `
-    }  
+    } 
+    //filtrar por tipo  
 }
