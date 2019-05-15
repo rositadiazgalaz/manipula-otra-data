@@ -8,13 +8,48 @@
   <body>
     <h1>pokemon data</h1>
     
-    <!-- As a heading -->
+    <!-- NAVBAR CON SELECT -->
 <nav class="navbar navbar-dark bg-primary">
-  <span class="navbar-brand mb-0 h1">Navbar</span>
-</nav>
-<div id="root">
+    <div class="pokesInSelectType">
+        Filtrar por Tipo
+        <select name="selectByType" id="selectedByType">
+          <option value="Filter">Seleccionar</option>
+          <option value="Water">Agua</option>
+          <option value="Bug">Bicho</option>
+          <option value="Dragon">Dragón</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Fire">Fuego</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Normal">Normal</option>
+          <option value="Grass">Planta</option>
+          <option value="Psychic">Psíquico</option>
+          <option value="Rock">Roca</option>
+          <option value="Ground">Tierra</option>
+          <option value="Poison">Veneno</option>
+          <option value="Flying">Volador</option>
+    
+        </select> 
+    </div>
+</nav> <!-- FIN NAVBAR -->
+
+<section> <!-- SECCION MOSTRAR POKEMONES -->
+  <div class="container"><!-- CONTAINER SECTION -->
+    <div class="row"> <!-- ROW SECTION-->
+      <div class="col-sm"> <!-- COL SECTION-->
+        <div id="root">
       
-</div>
+          </div>
+          <div id="typePokes">
+
+          </div>
+        
+      </div> <!-- FIN COL SECTION -->
+    </div> <!-- FIN ROW SECTION -->
+  </div> <!-- FIN CONTAINER SECTION -->
+</section> <!-- fin seccion mostrar -->
+
 
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>

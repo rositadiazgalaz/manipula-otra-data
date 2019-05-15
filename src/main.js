@@ -10,4 +10,26 @@ window.onload=()=>{
         `
     } 
     //filtrar por tipo  
+    SelectTypeByFilter = document.getElementById("selectedByType");
+    SelectTypeByFilter.addEventListener("change", ()=>{
+        /* OTRA FORMA DE GUARDAR VALOR  DE SELECT */
+        //let valueSelect=SelectTypeByFilter.options[SelectTypeByFilter.selectedIndex].value;
+        let selectValue=document.getElementById("selectedByType").value;
+        console.log(selectValue);
+       // console.log(valueSelect);
+
+        let filteringSelectedType =filterByType(pokedata, selectValue);
+        document.getElementById("root").innerHTML="";
+
+        filteringSelectedType.forEach(element => {
+            document.getElementById("root").innerHTML+=
+            `
+            <img src="${element.img}">
+            <p>${element.name}</p>
+            <p>${element.type}</p>
+            `
+            
+        });
+
+    }) 
 }
