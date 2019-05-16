@@ -4,9 +4,14 @@
 window.onload=()=>{
     for(let i=0; i < pokedata.length; i++){
         document.getElementById("root").innerHTML +=
-        `
-        <img src="${pokedata[i].img}" alt="hola">
-        <p>${pokedata[i].name}</p>
+        `<div class="col-6 col-md-3 col-lg-2">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="${pokedata[i].img}" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">${pokedata[i].name}</h4>                
+                    </div>
+                </div>
+        </div>
         `
     } 
     //filtrar por tipo  
@@ -31,5 +36,5 @@ window.onload=()=>{
             
         });
 
-    }) 
+    });
 }

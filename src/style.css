@@ -1,0 +1,12 @@
+.showPoke{
+    display: flex;
+    width: 80%;
+    
+    /* align-content-stretch */
+}
+.card{
+    
+}
+#gridDinamic{
+    display:block;
+}
